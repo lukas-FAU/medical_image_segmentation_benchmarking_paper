@@ -208,7 +208,7 @@ def set_up_model_and_train(train_items, val_items, num_epochs, save_path="", cac
     val_loader = DataLoader(dataset=val_dataset, batch_size=BATCH_SIZE_VALIDATION, shuffle=False,
                             num_workers=NUM_WORKERS)
 
-    model = SwinUNETR(in_channels=1, out_channels=NUM_CLASSES, feature_size=24, spatial_dims=3, use_checkpoint=True)
+    model = SwinUNETR(in_channels=1, out_channels=NUM_CLASSES, feature_size=48, spatial_dims=3, use_checkpoint=True)
 
     model.to(DEVICE)
 
