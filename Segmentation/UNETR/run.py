@@ -2,7 +2,7 @@ import unetr
 import sys
 
 
-NUM_EPOCHS = 150
+NUM_EPOCHS = 1
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
